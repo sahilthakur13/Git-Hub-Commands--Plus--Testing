@@ -13,7 +13,7 @@ Uska HTTPS URL copy karo (e.g., https://github.com/username/MyProject.git)
 cd D:/GitHubTest
 
 # 2. Local git repo initialize karo
-git init
+git init    
 
 # 3. Files add karo
 git add .
@@ -25,7 +25,7 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/username/MyProject.git
 
 # 6. Push karo (first time ke liye -u lagao)
-git push -u origin master   # ya main (agar repo 'main' branch use kar raha ho)
+git push -u origin main   
 
 
 3️⃣  Push commands in future 
@@ -67,7 +67,7 @@ git push -u origin feature-1
 Feature branch ka kaam complete hone ke baad:
 
 # Wapas master/main branch pe jao
-git checkout master
+git checkout main
 
 # Latest code lelo
 git pull
