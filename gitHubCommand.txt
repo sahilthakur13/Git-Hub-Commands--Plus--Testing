@@ -1,0 +1,25 @@
+ git init
+
+ git add githubTesting.txt
+
+[master (root-commit) 5674b8d] testing-Github_1
+ 1 file changed, 3 insertions(+)
+ create mode 100644 githubTesting.txt
+
+ git remote -v   <----------  Tumhe kuch bhi output nahi milega, 
+                             kyunki tumne abhi tak GitHub ka remote link add nahi kiya.
+
+
+PS D:\GitHubTest> git add .     <-------   folder added 
+PS D:\GitHubTest> git status       
+On branch master
+nothing to commit, working tree clean
+
+
+GitHub website pe ek naya repo banana padega.
+Uska HTTPS ya SSH URL copy karo.
+Local repo me remote set karo
+
+git remote add origin https://github.com/<username>/<repo-name>.git
+
+git push -u origin master

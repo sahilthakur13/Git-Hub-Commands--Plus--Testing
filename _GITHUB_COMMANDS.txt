@@ -1,0 +1,92 @@
+1️⃣ GitHub pe Repo Banana
+GitHub open karo → New Repository
+
+Repo ka naam do (e.g., MyProject)
+
+Create repository pe click karo
+
+Uska HTTPS URL copy karo (e.g., https://github.com/username/MyProject.git)
+
+
+2️⃣ Push the local Project on Github
+# 1. Project folder me jao
+cd D:/GitHubTest
+
+# 2. Local git repo initialize karo
+git init
+
+# 3. Files add karo
+git add .
+
+# 4. Commit karo
+git commit -m "Initial commit"
+
+# 5. GitHub remote repo link karo
+git remote add origin https://github.com/username/MyProject.git
+
+# 6. Push karo (first time ke liye -u lagao)
+git push -u origin master   # ya main (agar repo 'main' branch use kar raha ho)
+
+
+3️⃣  Push commands in future 
+-----  update files in github  after  running the below commands 
+git add .
+git commit -m "Updated some files"
+git push
+
+
+
+4️⃣ Pull the github project Changes into your project 
+gar kisi ne GitHub pe change kiya aur tumhare local project me lana chahte ho:
+
+this command  ------>   git pull
+
+
+5️⃣ Remote Repo Check Karna
+Dekho ki tumhara local repo kis GitHub repo se linked hai:
+
+---------------->  git remote -v
+
+
+6️⃣ Branch Banane aur Switch Karne ka Real-World Use
+Developers mostly new feature ya bug fix ke liye branch banate hain:
+
+# New branch banao
+git branch feature-1
+
+# Branch me switch karo
+git checkout feature-1
+
+# Changes karo, commit karo, push karo
+git add .
+git commit -m "Feature 1 done"
+git push -u origin feature-1
+
+
+7️⃣ Branch Merge Karna
+Feature branch ka kaam complete hone ke baad:
+
+# Wapas master/main branch pe jao
+git checkout master
+
+# Latest code lelo
+git pull
+
+# Merge karo
+git merge feature-1
+
+# Push karo
+git push
+
+
+💡 Real-world Developer Shortcuts
+
+Push changes quickly:
+---------> git add . && git commit -m "message" && git push
+
+Check status (kis file me change hua):
+---------> git status
+
+
+Check commit history
+----------> git log --oneline
